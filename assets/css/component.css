@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/* z-index,position,position-속성,display,margin,padding,width,height,border, */
+/* 버튼 */
+.btn_large {
+	width: 240px;
+	height: 58px;
+	border-radius: 5px;
+	font-size: 18px;
+
+}
+
+.btn_large_padding_20 {
+	padding: 0 20px;
+	background: #ffd800;
+	font-size: 18px;
+	height: 58px;
+	border-radius: 5px;
+	border: 0;
+}
+
+.btn {
+	padding: 0 20px;
+	width: 200px;
+	height: 48px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.btn_small {
+	font-size: 14px;
+}
+
+.yellow {
+	background: #ffd800;
+	border: 1px solid #ffd800;
+}
+
+.gray {
+	background: #cccccc;
+	border: 1px solid #cccccc;
+}
+
+.disable {
+	background: #e8e8e8;
+	border: 1px solid #e8e8e8;
+	color: #919191;
+}
+
+
+.border {
+	background: #ffffff;
+	border: 1px solid #60584d;
+	border-radius: 5px;
+}
+
+.border_radius_18 {
+	padding: 0 16px;
+	height: 30px;
+	background: #ffffff;
+	border: 1px solid #60584d;
+	border-radius: 18px;
+}
+
+.history {
+	width: 81px;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 18px;
+	background: #ffffff;
+	border: 1px solid #60584d;
+}
+
+.brown {
+	width: 68px;
+	height: 40px;
+	background: #60584d;
+	border-radius: 5px;
+	border: 0;
+	color: #fff;
+}
+
+.filter_white {
+	width: 68px;
+	height: 40px;
+	background: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #60584d;
+}
+
+.day_selected {
+	font-size: 14px;
+	width: 45px;
+	background: #ffffff;
+	height: 30px;
+	border: 1px solid #60584d;
+	border-radius: 5px;
+}
+
+.day_nonselected {
+	font-size: 14px;
+	width: 45px;
+	background: #ffffff;
+	height: 30px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	color: #60584d;
+}
+
+.memo {
+	font-size: 14px;
+	width: 77px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #afafaf;
+	border-radius: 2px;
+}
+
+.btn_text {
+	border: 0;
+	background: none;
+}
+
+.btn_text::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #222222;
+}
+
+.text_14 {
+	font-size: 14px;
+}
+
+.text_16 {
+	font-size: 16px;
+}
+
+.text_18 {
+	font-size: 18px;
+}
+
+/* elements */
+.elements input {
+	width: 24px;
+	height: 24px;
+	appearance: none;
+	background-repeat: no-repeat;
+
+}
+
+#checkbox_checked {
+	background-image: url(../images/check-box-on.png);
+}
+
+#checkbox_unchecked {
+	background-image: url(../images/check-box-off.png);
+}
+
+#checkbox_disable {
+	background-image: url(../images/check-box-disable.png);
+}
+
+#radio_checked {
+	background-image: url(../images/radio-on.png);
+}
+
+#radio_unchecked {
+	background-image: url(../images/radio-off.png);
+}
+
+#radio_disable {
+	background-image: url(../images/radio-disable.png);
+}
+
+#radio_txt_wrap span {
+	padding-left: 34px;
+	line-height: 24px;
+	background: url(../images/radio-off.png) no-repeat 0;
+}
+
+#radio_txt:checked+span {
+	background: url(../images/radio-on.png) no-repeat 0;
+}
+
+#text_field {
+	padding-left: 20px;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	line-height: 24px;
+}
+
+.disable {
+	background: #f8f8f8;
+	border: 1px solid #e8e8e8;
+}
+
+.delete {
+	display: none;
+}
+
+#select_box::placeholder {
+	color: #919191;
+}
+
+#select_box {
+	width: 200px;
+	height: 40px;
+	padding: 10px 12px 20px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	appearance: none;
+}
+
+#select_box_small {
+	padding: 10px 12px 20px;
+	width: 180px;
+	height: 40px;
+	border-radius: 20px;
+	background: #f8f8f8;
+}
+
+#select_box_txt {
+	width: 100%;
+}
+
+.select_box_disable {
+	background: #f8f8f8;
+	border: 1px solid #e8e8e8;
+}
+
+/**/
+.input-box{position:relative; display:inline-block; padding-left:34px; outline:1px solid red;}
+.input-box.hide{padding-left:24px; line-height:24px;}
+.input-box input[type="radio"] {appearance: none;}
+.input-box input[type="radio"] + label{display:inline-block; line-height:24px;}
+.input-box input[type="radio"] + label.hide{height:24px;}
+.input-box input[type="radio"] + label:before{position:absolute; top:0; left:0; content:'';display:block;width:22px;height:22px;border-radius:50%; border:1px solid #666; }
+.input-box input[type="radio"]:checked + label:before {width:20px;height:20px; border:2px solid #ffd800; }
+.input-box input[type="radio"]:checked + label:after{position:absolute; top:5px; left:5px; content:'';display:block; width:14px; height:14px; background:#ffd800; border-radius:50%; }
+
+.blind{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+

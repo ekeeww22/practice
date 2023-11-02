@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../assets/css/base.css">
+	<script src="../assets/js/guide.js"></script>
+	<script>
+		window.onload = function (){
+			UI_GUIDE.GNB.init();
+		}
+	</script>
+</head>
+
+<body>
+	<div class="guide-wrap">
+		<ul class="guide-gnb">
+			<li id="component"><button type="button" class="btn-menu">component</button></li>
+			<li id="template"><button type="button" class="btn-menu">template</button></li>
+			<li id="page"><button type="button" class="btn-menu">page</button></li>
+		</ul>
+		<div class="guide-container">
+			<div class="contents">
+				<iframe></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
