@@ -1,1 +1,11 @@
 @charset "UTF-8";
+
+/* table */
+.table-area table {width:1080px; border-top: 2px solid #60584d;}
+.table-area table th {background:#F9F8F7;}
+
+.type02 th, .type02 td {height:64px; text-align:center; vertical-align:middle; border-bottom:1px solid #000; word-break:break-all;}
+.type03 th, .type03 td {padding-left:20px; height:64px; text-align: start; vertical-align:middle; border-bottom:1px solid #000; word-break:break-all;}
+
+.type01 {}
+.type01 th, .type01 td {padding-left:20px; height:64px; text-align: start; vertical-align:middle; word-break:break-all;}
