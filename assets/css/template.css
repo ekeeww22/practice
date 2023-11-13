@@ -1,11 +1,55 @@
 @charset "UTF-8";
 
 /* table */
-.table-area table {width:1080px; border-top: 2px solid #60584d;}
-.table-area table th {background:#F9F8F7;}
+.table-wrap table {width:100%; border-top:2px solid #60584D; border-bottom:1px solid #ccc;}
+.table-wrap table tr{min-height:50px;}
+.table-wrap table tr th {font-weight:500; }
+.table-wrap table tr td {font-weight:300;}
+.table-wrap table tr th, .table-wrap table tr td {font-size:16px; line-height:24px; padding:14px 0;}
 
-.type02 th, .type02 td {height:64px; text-align:center; vertical-align:middle; border-bottom:1px solid #000; word-break:break-all;}
-.type03 th, .type03 td {padding-left:20px; height:64px; text-align: start; vertical-align:middle; border-bottom:1px solid #000; word-break:break-all;}
+/* 테이블 가로형 */
+.table-wrap .table-type-row tbody tr + tr {border-top:1px solid #e8e8e8;}
+.table-wrap .table-type-row tbody tr {text-align:left;}
+.table-wrap .table-type-row tbody tr th {background:#F9F8F7;}
+.table-wrap .table-type-row tbody tr th, .table-wrap .table-type-row tbody tr td {padding-left:20px;}
 
-.type01 {}
-.type01 th, .type01 td {padding-left:20px; height:64px; text-align: start; vertical-align:middle; word-break:break-all;}
+/* 테이블 세로형 */
+.table-wrap .table-type-col thead { background:#F9F8F7;}
+.table-wrap .table-type-col tbody tr {border-top:1px solid #e8e8e8;}
+.table-wrap .table-type-col tr {text-align:center; height:52px;}
+.txt-right {text-align:right;}
+
+/* 불릿 리스트 */
+.bullet-list-wrap {padding:14px 0 14px 20px; width:100%; background:#f8f8f8; border-radius:10px;}
+.bullet-list-wrap .bullet-list-tit-wrap .bullet-list-tit {display:flex; align-items:center;}
+.bullet-list-wrap .bullet-list-tit-wrap .bullet-list-tit label .tit-txt {font-size:16px; font-weight:500; line-height: 24px;}
+.bullet-list-wrap .bullet-list-tit-wrap .bullet-list-tit input[type="checkbox"] {appearance: none; width:16px; height:16px; margin-left:10px; background:url(../images/icon-16-comm-arrowdown.png) no-repeat center;}
+.bullet-list-wrap .bullet-list-tit-wrap .bullet-list-tit input[type="checkbox"]:checked {background:url(../images/icon-16-comm-arrowup.png) no-repeat center;}
+.bullet-list-wrap .bullet-list-container {margin-top:14px;}
+.bullet-list-wrap .bullet-list-container li + li {margin-top:10px;}
+.bullet-list-wrap .bullet-list-container li .bullet-list-txt {position:relative; font-size:14px; line-height:20px; padding-left:6px; color:#555555;}
+.bullet-list-wrap .bullet-list-container li .bullet-list-txt::before {position:absolute; top:50%; left:0; display:block; content:''; width:2px; height:2px; border-radius:50%; background:#afafaf;}
+
+/* user info list */
+.user-info-list-wrap {width:100%; padding:20px; border:1px solid #ccc; border-radius:16px;}
+.user-info-list-wrap .user-info-wrap {display:flex; width:100%; flex-wrap:wrap;}
+.user-info-list-wrap .user-info-wrap li {width:50%;}
+.user-info-list-wrap .user-info-wrap li:nth-child(n+3)  {margin-top:20px;}
+.user-info-list-wrap .user-info-wrap li .user-info-tit {display:inline-block; width:168px; color:#919191;  font-size:16px; line-height:24px; font-weight:500;}
+.user-info-list-wrap .user-info-wrap li .user-info-txt {position:relative; padding-left:20px; color:#222222; font-size:16px; line-height:24px; font-weight:500;}
+.user-info-list-wrap .user-info-wrap li .user-info-txt::before {position:absolute; top:50%; left:0; transform:translateY(-50%); display:block; content:''; width:1px; height:16px; background:#ccc;}
+
+/* 테이블 공통 (가로,세로) */
+.table-area .t-left{text-align:left;}
+.table-area .t-right{text-align:right;}
+.table-area table{border-top:2px solid #60584d; border-bottom:1px solid #ccc; }
+.table-area th{padding:14px 10px; text-align:center; background:#f9f8f7; font-size:0;}
+.table-area td{padding:14px 10px; text-align:center; font-size:0;}
+.table-area th span{display:inline-block; line-height:24px; font-size:16px; font-weight:700; }
+.table-area td span{display:inline-block; line-height:24px; font-size:16px; }
+.table-area tbody tr{border-top:1px solid #e8e8e8;}
+
+
+/* 테이블 세로 */
+.table-area.type-vertical th{text-align:left;}
+.table-area.type-vertical td{text-align:left;}

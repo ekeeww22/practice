@@ -64,7 +64,9 @@ html, body {
 .guide-wrap .guide-container{height:100%;}
 .guide-wrap .guide-contents{height:100%;}
 .guide-tit{padding:20px 0; font-size:30px; font-weight:bold; border-bottom:2px solid black; }
-.guide-list > li{display:flex; padding:20px 0; border-bottom:2px solid black; }
-
+.guide-list > li{padding:20px 0; border-bottom:2px solid black; }
 .router{display:block; width:100%; height:100%;}
 
+/* flex-area */
+.flex-area{display:flex; align-items: top; }
+.flex-area > * + *{margin-left:10px;}
